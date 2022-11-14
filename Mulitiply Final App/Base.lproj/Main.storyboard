@@ -45,10 +45,16 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4sn-r5-pPa">
                                 <rect key="frame" x="35" y="237" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changeNumber1:" destination="BYZ-38-t0r" eventType="valueChanged" id="Erd-5o-7hO"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xY1-f3-kZV">
                                 <rect key="frame" x="261" y="236" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changeNumber2:" destination="BYZ-38-t0r" eventType="valueChanged" id="H7D-qi-FUH"/>
+                                </connections>
                             </slider>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XpD-Hg-Gd4">
                                 <rect key="frame" x="93" y="318" width="228" height="32"/>
@@ -60,6 +66,9 @@
                                     <segment title="/"/>
                                     <segment title="%"/>
                                 </segments>
+                                <connections>
+                                    <action selector="changeOperations:" destination="BYZ-38-t0r" eventType="valueChanged" id="aTw-Rk-VsI"/>
+                                </connections>
                             </segmentedControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Input first number:                           Input second number:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fh5-tA-a5V">
                                 <rect key="frame" x="20" y="104" width="374" height="33"/>
@@ -98,6 +107,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PuA-8o-LlE"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Output" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wze-Cj-gfb">
                                 <rect key="frame" x="169" y="423" width="75" height="21"/>
@@ -111,11 +123,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Clear"/>
+                                <connections>
+                                    <action selector="clearApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oy2-39-e5V"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="evenOrOddImageView" destination="wPX-hO-Ttc" id="V5n-xn-Ww4"/>
+                        <outlet property="marioKartImageView" destination="DH9-ZD-nbN" id="9ih-A3-E4q"/>
+                        <outlet property="number1Slider" destination="4sn-r5-pPa" id="lWf-Pm-Q0Y"/>
+                        <outlet property="number1TextField" destination="8wq-QG-kFK" id="4pd-u6-iL7"/>
+                        <outlet property="number2Slider" destination="xY1-f3-kZV" id="bja-aq-K3c"/>
+                        <outlet property="number2TextField" destination="83e-FU-HfA" id="3nQ-Qw-7JZ"/>
+                        <outlet property="operatorLabel" destination="fEt-KC-842" id="2Sn-2E-REu"/>
+                        <outlet property="operatorsSegmentedControl" destination="XpD-Hg-Gd4" id="Efs-sG-54J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
