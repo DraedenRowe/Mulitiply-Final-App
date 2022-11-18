@@ -40,7 +40,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let currentValue = Int(sender.value)
         number2TextField.text = String(currentValue)
         //textOutlet.text = String(currentValue)
-
+        
     }
     
     
@@ -72,7 +72,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
             operatorLabel.text = "%"
 
         default:
-            output = 0
+            output = number1 + number2
+            operatorLabel.text = "+"
     }
 }
         
