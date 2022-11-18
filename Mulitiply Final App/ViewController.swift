@@ -85,8 +85,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if output == 64{
             marioKartImageView.image = UIImage(named: "waluigi")
         }
-        else{
+        if output < 64{
             marioKartImageView.image = UIImage(named: "brentpeterson")
+        }
+        else{
+            marioKartImageView.image = UIImage(named: "geicoGecko")
         }
         if output % 2 == 0{
             evenOrOddImageView.image = UIImage(named: "williem")
