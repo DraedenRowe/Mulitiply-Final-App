@@ -23,12 +23,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Number 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8wq-QG-kFK">
-                                <rect key="frame" x="20" y="145" width="160" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Number 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="83e-FU-HfA">
                                 <rect key="frame" x="233" y="145" width="161" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -42,14 +36,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5000" minValue="0.0" maxValue="10000" translatesAutoresizingMaskIntoConstraints="NO" id="4sn-r5-pPa">
-                                <rect key="frame" x="18" y="237" width="164" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="changeNumber1:" destination="BYZ-38-t0r" eventType="valueChanged" id="Erd-5o-7hO"/>
-                                    <action selector="numberSlider1:" destination="BYZ-38-t0r" eventType="valueChanged" id="5l4-KU-6FE"/>
-                                </connections>
-                            </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5000" minValue="0.0" maxValue="10000" translatesAutoresizingMaskIntoConstraints="NO" id="xY1-f3-kZV">
                                 <rect key="frame" x="231" y="236" width="165" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -72,14 +58,6 @@
                                     <action selector="changeOperations:" destination="BYZ-38-t0r" eventType="valueChanged" id="aTw-Rk-VsI"/>
                                 </connections>
                             </segmentedControl>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Input First Number:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Fh5-tA-a5V">
-                                <rect key="frame" x="20" y="104" width="160" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Choose the operation:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zAx-Y8-b3C">
                                 <rect key="frame" x="87" y="274" width="222" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -137,7 +115,36 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Adjust First Number:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Yox-2b-nmS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2az-hi-dic">
+                                <rect key="frame" x="181" y="376" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Number 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vjz-23-Ff3">
+                                <rect key="frame" x="20" y="145" width="161" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5000" minValue="0.0" maxValue="10000" translatesAutoresizingMaskIntoConstraints="NO" id="s05-1q-KGE">
+                                <rect key="frame" x="18" y="237" width="164" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changeNumber1:" destination="BYZ-38-t0r" eventType="valueChanged" id="YXm-Qg-MId"/>
+                                    <action selector="numberSlider1:" destination="BYZ-38-t0r" eventType="valueChanged" id="OaQ-O7-yX3"/>
+                                </connections>
+                            </slider>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Input First Number:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2b0-2k-d18">
+                                <rect key="frame" x="20" y="104" width="160" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Adjust First Number:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Oyq-kP-W7G">
                                 <rect key="frame" x="20" y="195" width="160" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -145,6 +152,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nnf-5v-bMx">
+                                <rect key="frame" x="188" y="145" width="36" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -152,11 +166,11 @@
                     <connections>
                         <outlet property="evenOrOddImageView" destination="wPX-hO-Ttc" id="V5n-xn-Ww4"/>
                         <outlet property="marioKartImageView" destination="DH9-ZD-nbN" id="9ih-A3-E4q"/>
-                        <outlet property="number1Slider" destination="4sn-r5-pPa" id="lWf-Pm-Q0Y"/>
-                        <outlet property="number1TextField" destination="8wq-QG-kFK" id="4pd-u6-iL7"/>
+                        <outlet property="number1Slider" destination="s05-1q-KGE" id="05r-Cd-t0U"/>
+                        <outlet property="number1TextField" destination="Vjz-23-Ff3" id="5mp-pQ-Y94"/>
                         <outlet property="number2Slider" destination="xY1-f3-kZV" id="bja-aq-K3c"/>
                         <outlet property="number2TextField" destination="83e-FU-HfA" id="3nQ-Qw-7JZ"/>
-                        <outlet property="operatorLabel" destination="fEt-KC-842" id="2Sn-2E-REu"/>
+                        <outlet property="operatorLabel" destination="nnf-5v-bMx" id="tkt-TB-WbZ"/>
                         <outlet property="operatorsSegmentedControl" destination="XpD-Hg-Gd4" id="Efs-sG-54J"/>
                         <outlet property="outputLabel" destination="wze-Cj-gfb" id="p4d-fk-dOy"/>
                     </connections>
