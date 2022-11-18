@@ -81,6 +81,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
         outputLabel.text = "\(output)"
         number1TextField.resignFirstResponder()
         number2TextField.resignFirstResponder()
+        //Jack Section
+        if output == 64{
+            marioKartImageView.image = UIImage(named: "waluigi")
+        }
+        else{
+            marioKartImageView.image = UIImage(named: "brentpeterson")
+        }
+
     }
     
     
