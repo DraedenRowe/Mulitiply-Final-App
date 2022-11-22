@@ -30,16 +30,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
 //Draeden Section
     
     @IBAction func numberSlider1(_ sender: UISlider) {
-        let currentValue = Int(sender.value)
-        number1TextField.text = String(currentValue)
-        //textOutlet.text = String(currentValue)
+        sender.minimumValue = 0
+        sender.maximumValue = 1000
+        number1TextField.text = String(Int(sender.value))
 
     }
     
     @IBAction func numberSlider2(_ sender: UISlider) {
-        let currentValue = Int(sender.value)
-        number2TextField.text = String(currentValue)
-        //textOutlet.text = String(currentValue)
+        sender.minimumValue = 0
+        sender.maximumValue = 1000
+        number2TextField.text = String(Int(sender.value))
         
     }
     
@@ -111,4 +111,3 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
 }
-
