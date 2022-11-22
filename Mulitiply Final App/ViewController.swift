@@ -24,6 +24,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
         number1TextField.delegate = self
         number2TextField.delegate = self
+        
+        operatorLabel.textAlignment = .center
+        operatorLabel.sizeToFit()
     }
     
     var output = 0
