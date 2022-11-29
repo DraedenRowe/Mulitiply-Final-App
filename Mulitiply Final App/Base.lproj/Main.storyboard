@@ -29,7 +29,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ISn-rL-Rxs">
-                                <rect key="frame" x="20" y="69" width="374" height="793"/>
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MULTIPLY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90X-2W-UK8">
                                         <rect key="frame" x="122.5" y="0.0" width="129" height="42"/>

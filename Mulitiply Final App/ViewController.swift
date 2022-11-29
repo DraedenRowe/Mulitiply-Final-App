@@ -115,6 +115,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         marioKartImageView.image = UIImage(named: "transparent")
         evenOrOddImageView.image = UIImage(named: "transparent")
         outputLabel.text = "Output"
+        operatorLabel.text = ""
         
     }
     
