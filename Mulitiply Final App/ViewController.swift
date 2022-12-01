@@ -109,14 +109,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
 //Jack Section
-    @IBAction func clearApp(_ sender: Any) {
+    @IBAction func clearButton(_ sender: UIButton) {
         number1TextField.text = " "
         number2TextField.text = " "
         marioKartImageView.image = UIImage(named: "transparent")
         evenOrOddImageView.image = UIImage(named: "transparent")
         outputLabel.text = "Output"
         operatorLabel.text = ""
-        
     }
     
     
